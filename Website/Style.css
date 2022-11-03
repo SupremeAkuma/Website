@@ -1,0 +1,388 @@
+*{
+ color:Black;
+ background:white;
+}
+
+p{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size:30px;
+	text-align:center;
+}
+
+div{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+#wrap{
+  min-width: 1000px;
+}
+
+#blurred {
+  background: url(Images/2022.jpg);
+  filter: blur(-5px);
+  -webkit-filter: blur(-5px);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 600px;
+  width: 90%;
+  border: black;
+  border: solid;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*This section is for the About Us*/
+#about-us{
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  background: url(Images/retro.jpg)no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+#about-divP{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+ max-height: 500px;
+}
+.about-divC{
+  width: 35%;
+  float: left;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 15%;
+  margin: 15px;
+  font-size: 20px;
+}
+.Aleft{
+  background-color: rgb(255,156,79);
+}
+#aboutL{
+  background-color: rgb(255,156,79);
+}
+.Aright{
+  background-color: rgb(85,239,106);
+}
+#aboutR{
+  background-color: rgb(85,239,106);
+}
+/*This section is for the allergies page*/
+#allergiesI{
+	height: 700px;
+	width: 60%;
+	text-align: center;
+	margin-right: auto;
+	background: url(Images/local.jpg)no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+	border: 2px solid black;
+}
+#allergiesT{
+  background-color: rgb(255,156,79);
+}
+.allergiesP{
+	display: flex;
+  justify-content: center;
+}
+.Lallergies{
+  width: 40%;
+  padding: 10px;
+  margin-top: 0%;
+  background-color: rgb(255,156,79);
+  font-size: 20px;
+}
+.AText{
+  background-color: rgb(255,156,79);
+  font-size: 20px;
+  
+}
+/*This section is for the Recipe pages*/
+.recipeimg{
+  text-align: center;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recipe{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+/*This section is for the recipe divs*/
+.Rdiv {
+  border: 2px solid black;
+  color: black;
+  padding: 16px 64px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #446fc7;
+}
+.r-nav{
+  background-color: #446fc7;
+}
+.r-nav:hover{
+  color: white;
+}
+
+.Bdiv {
+  border: 2px solid black;
+  color: black;
+  padding: 16px 64px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2rem;
+  max-width: 200px;
+  margin-left: 0%;
+  margin-right: auto;
+  background-color: #446fc7;
+}
+.b-nav{
+  background-color: #446fc7;
+}
+.b-nav:hover{
+  color: white;
+}
+
+/*This section is about the 3 bottom images*/
+.parent-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.div-border {
+  height: 280px;
+  width: 220px;
+  border: black;
+  border:solid;
+  border-radius: 10%;
+  margin: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.border1 {
+  background: #446fc7;
+}
+
+.border2 {
+  background: rgb(255,206,234);
+}
+
+.border3 {
+  background: rgb(255,156,79);
+}
+
+#blog {
+  height: 200px;
+  width:200px;
+  border-radius: 25%;
+  background: url(Images/Gamestop.jpg)no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  position:absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+#BBC {
+  height: 200px;
+  width: 200px;
+  border-radius: 25%;
+  background: url(Images/Meta.png)no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+#nut {
+  height: 200px;
+  width:200px;
+  border-radius: 25%;
+  background: url(Images/IGN.jpg)no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 16px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  left: 5%;
+  top: 74%;
+}
+
+.button1:hover {
+  background-color: #446fc7;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  left: 10%;
+  top: 74%;
+}
+
+.button2:hover {
+  background-color: rgb(255,206,234);
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  left: 5%;
+  top: 74%;
+}
+
+.button3:hover {
+  background-color: rgb(255,156,79);
+  color: white;
+}
+
+/* This section below is for the top menu */
+.flex-container {
+  display: flex;
+  background-color: #446fc7;
+  justify-content: left;
+}
+
+.flex-container > div {
+  background-color: #446fc7;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 35px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.flex-container a.active {
+  background-color: #446fc7;
+  color: white;
+}
+
+.flex-container a:hover {
+  background-color: #446fc7;
+  color:  white;
+}
+
+.a-nav{
+  background-color: #446fc7;
+  color: black;
+}
+
+.logo-div {
+  height: 124px;
+  width: 200px;
+}
+
+#Logo {
+  width: 100%;
+  height: 124px;
+  display: block;
+}
+
+
+/* This section is for the footer */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  float: right;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+
+#footer {
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #446fc7;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+

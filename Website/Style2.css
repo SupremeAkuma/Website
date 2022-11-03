@@ -1,0 +1,110 @@
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+  :root {
+    --black: #1a1a1a;
+    --white: #fff;
+    --green: #ffc320;
+  }
+  
+  .filters {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filters * {
+    display: inline-block;
+  }
+  
+  .filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  
+  .filters label:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+  :root {
+    --black: #1a1a1a;
+    --white: #fff;
+    --green: #ffc320;
+  }
+  
+  .posts {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .posts .post {
+    background: white;
+    border: 2px solid black;
+    height: 250px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .posts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  [value="All"]:checked ~ .posts [data-category] {
+    display: block;
+  }
+  [value="Vegetarian"]:checked ~ .posts .post:not([data-category~="Vegetarian"]),
+  [value="Gluten-Free"]:checked ~ .posts .post:not([data-category~="Gluten-Free"]),
+  [value="Dairy-Free"]:checked ~ .posts .post:not([data-category~="Dairy-Free"]),
+  [value="Meat-Lovers"]:checked ~ .posts .post:not([data-category~="Meat-Lovers"]),
+  [value="Quick-Meals"]:checked ~ .posts .post:not([data-category~="Quick-Meals"]),
+  [value="Dessert"]:checked ~ .posts .post:not([data-category~="Dessert"])
+  {
+    display: none;
+  }
+  
+  :root {
+    --black: #1a1a1a;
+    --white: #fff;
+    --green: #ffc320;
+  }
+  
+  [value="All"]:checked ~ .filters [for="All"],
+  [value="Vegetarian"]:checked ~ .filters [for="Vegetarian"],
+  [value="Gluten-Free"]:checked ~ .filters [for="Gluten-Free"],
+  [value="Dairy-Free"]:checked ~ .filters [for="Dairy-Free"],
+  [value="Meat-Lovers"]:checked ~ .filters [for="Meat-Lovers"],
+  [value="Quick-Meals"]:checked ~ .filters [for="Quick-Meals"],
+  [value="Dessert"]:checked ~ .filters [for="Dessert"]
+  {
+    background: var(--green);
+    color: var(--white);
+  }
+
+
+  .menu{
+      height: 250px;
+      width: 100%;
+      border: 2px solid black;
+  }
+  .Tofu{
+    
+      background: url(Images/TofuRice.jpg)no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+  }
